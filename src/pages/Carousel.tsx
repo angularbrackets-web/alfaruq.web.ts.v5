@@ -11,13 +11,13 @@ const Carousel = ({ slides }: CarouselProps): JSX.Element => {
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
-      setIndex((currentIndex) => (currentIndex + 1) % slides.length);
+      setIndex((currentIndex) => (currentIndex + 1) % slides?.length);
     }, 3000);
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [slides.length]);
+  }, [slides?.length]);
 
   const handleClick = (direction: "prev" | "next") => {
     if (intervalRef.current) clearInterval(intervalRef.current);
@@ -25,16 +25,16 @@ const Carousel = ({ slides }: CarouselProps): JSX.Element => {
     setIndex((currentIndex) => {
       let nextIndex = 0;
       if (direction === "next") {
-        nextIndex = (currentIndex + 1) % slides.length;
+        nextIndex = (currentIndex + 1) % slides?.length;
       } else if (direction === "prev") {
         nextIndex =
-          currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+          currentIndex === 0 ? slides?.length - 1 : currentIndex - 1;
       }
       return nextIndex;
     });
 
     intervalRef.current = setInterval(() => {
-      setIndex((currentIndex) => (currentIndex + 1) % slides.length);
+      setIndex((currentIndex) => (currentIndex + 1) % slides?.length);
     }, 3000);
   };
   
@@ -43,7 +43,7 @@ const Carousel = ({ slides }: CarouselProps): JSX.Element => {
 
   return (
     <div className="flex relative h-64 min-h-screen">
-      {slides.map((slide, i) => (
+      {slides?.map((slide, i) => (
         <div
           key={i}
           className={`${

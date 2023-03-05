@@ -25,7 +25,7 @@ const CardSelector = ({ cards, buttonId }: Props) => {
   return (
     <div>
       <div className="flex gap-4">
-        {cards.map((card) => (
+        {cards?.map((card) => (
           <Card
             key={card.id}
             id={card.id}

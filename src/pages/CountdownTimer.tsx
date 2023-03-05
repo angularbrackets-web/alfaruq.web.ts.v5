@@ -70,7 +70,7 @@ const events: Event[] = [
 
 const getNextEvent = (currentDate: DateTime) => {
   
-  for (let i = 0; i < events.length; i++) {
+  for (let i = 0; i < events?.length; i++) {
     if (currentDate < events[i].date) {
       return events[i];
     }
@@ -125,7 +125,7 @@ export default function CountDownTimer() {
         <section>
           <div>
             <h1 className="text-3xl my-5">{currentEvent.name} </h1>
-            <h2 className="text-3xl my-5">{timerComponents.length ? timerComponents : <span>Time's up!</span>}</h2>
+            <h2 className="text-3xl my-5">{timerComponents?.length ? timerComponents : <span>Time's up!</span>}</h2>
           </div>
         </section>    
       );
