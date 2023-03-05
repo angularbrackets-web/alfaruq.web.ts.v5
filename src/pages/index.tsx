@@ -8,7 +8,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Programs from './Programs'
 import Donate from './Donate'
-import HeroPrograms from './HeroPrograms'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
