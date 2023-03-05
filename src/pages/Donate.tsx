@@ -1,4 +1,3 @@
-import BuyButton from '@/components/BuyButton';
 import DonateButton from '@/components/DonateButton';
 import * as React from 'react';
 import CardSelector from './CardSelector';

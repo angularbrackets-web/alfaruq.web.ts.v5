@@ -8,7 +8,7 @@ type Props = {
 };
 
 const CardSelector = ({ cards, buttonId }: Props) => {
-  const [selectedId, setSelectedId] = useState('');
+  const [selectedId, setSelectedId] = useState('buy_btn_1MgJUYK6mKjqDOPwfMIYOg3g');
 
   const handleCardClick = (id: string) => {
     setSelectedId(id);

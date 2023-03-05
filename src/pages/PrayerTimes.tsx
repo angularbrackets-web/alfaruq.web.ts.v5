@@ -33,7 +33,7 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
   <div className='-my-36'>
     <div className=''>
       <h2 className="text-5xl font-semibold leading-tight">Prayer Times</h2>
-      <h6>{todayLocaleDate}, {time}</h6>
+      <h6>{todayLocaleDate}</h6>
       <h6>{hijriDate}</h6>
     </div>
     <div>
