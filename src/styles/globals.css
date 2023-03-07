@@ -82,3 +82,28 @@
 .w-h-point4rem{
   width: 0.4rem; height: 0.4rem
 }
+
+.donateBg{
+  background-image: url("../../public/glassjar.donate.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.angledBgPaleGreen{
+  background-image: linear-gradient(196deg, #cff7e6 70%, #F4F4F4 calc(70% + 2px));
+}
+
+.angledBgPaleGray{
+  background-image: linear-gradient(196deg, #eaeaea 70%, #F4F4F4 calc(70% + 2px));
+}
+
+.angledBgDarkTeal{
+  background-image: linear-gradient(196deg, #125050 70%, #333 calc(70% + 2px));
+}
+
+.paymentCard:hover{
+  background-image: linear-gradient(196deg, #5ec2ba 70%, #F4F4F4 calc(70% + 2px));
+  color: #125050;
+  border:1px solid #00c1c1;
+  transition: 0.5s;
+}

@@ -24,7 +24,7 @@ const CardSelector = ({ cards, buttonId }: Props) => {
   const publishableKey = 'pk_test_AXsypkph5Tlbuvyhzr0HYzs700CLlAFZQc';
   return (
     <div>
-      <div className="flex gap-4">
+      <div className="w-full flex flex-wrap mb-10">
         {cards?.map((card) => (
           <Card
             key={card.id}
@@ -35,15 +35,7 @@ const CardSelector = ({ cards, buttonId }: Props) => {
           />
         ))}
       </div>
-      <button
-        className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 mt-8 rounded"
-        onClick={handleButtonClick}
-        disabled={!selectedId}
-        id={selectedId ?? ''}
-      >
-        {selectedId ? `Button ${selectedId}` : 'Select a card first'}
-      </button>
-      <br />
+      
       <DonateButton donateButtonId={selectedId} publishableKey={publishableKey} />
     </div>
   );

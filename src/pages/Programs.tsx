@@ -65,11 +65,11 @@ export default function Programs() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {programs.map(program => (
-          <div key={program.id} className="border border-gray-100 bg-gray-100 rounded-2xl ">
+          <div key={program.id} className="border border-gray-100 bg-gray-100 rounded-2xl p-2 ">
             <div className="w-full bg-gray-900 h-48 p-16 text-xl md:text-2xl lg:text-3xl rounded-t-2xl">
               <h1>{program.title}</h1>
             </div>
-            <div className="bg-gray-100 text-teal-800 p-10 overflow-y-auto rounded-b-2xl"  dangerouslySetInnerHTML={{ __html: program.description}} />
+            <div className="bg-gray-100 text-teal-800 p-10 overflow-y-auto rounded-b-2xl angledBgPaleGreen min-h-[200px]"  dangerouslySetInnerHTML={{ __html: program.description}} />
           </div>
         ))}
       </div>
