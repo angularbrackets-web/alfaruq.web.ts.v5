@@ -101,6 +101,10 @@
   background-image: linear-gradient(196deg, #125050 70%, #333 calc(70% + 2px));
 }
 
+.angledBgSlateLime{
+  background-image: linear-gradient(196deg, #333 30%, #222 calc(30% + 2px));
+}
+
 .paymentCard:hover{
   background-image: linear-gradient(196deg, #5ec2ba 70%, #F4F4F4 calc(70% + 2px));
   color: #125050;
