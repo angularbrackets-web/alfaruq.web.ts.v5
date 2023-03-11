@@ -1,6 +1,6 @@
 export default function TTable(){
     return(
-        <section className="min-h-screen bg-slate-900 text-lime-300 angledBgSlateLime">
+        <section className="min-h-screen bg-slate-900 text-lime-300 angledBgSlate">
             <div className="flex flex-col p-[5%]">
   <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
     <div className="inline-block min-w-full sm:px-6 lg:px-8 border border-lime-900 rounded-lg px-[3%] py-[3%] lg:py-[2%]">

@@ -101,8 +101,29 @@
   background-image: linear-gradient(196deg, #125050 70%, #333 calc(70% + 2px));
 }
 
-.angledBgSlateLime{
-  background-image: linear-gradient(196deg, #333 30%, #222 calc(30% + 2px));
+.angledBgSlate{
+  background-image: linear-gradient(196deg, #013244 25%, #012235 calc(25% + 2px));
+}
+
+/* Medium screens */
+@media screen and (min-width: 600px) {
+  .angledBgSlate{
+    background-image: linear-gradient(196deg, #013244 30%, #012235 calc(30% + 2px));
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 900px) {
+  .angledBgSlate{
+    background-image: linear-gradient(196deg, #013244 35%, #012235 calc(35% + 2px));
+  }
+}
+
+/* Extra Large screens */
+@media screen and (min-width: 1200px) {
+  .angledBgSlate{
+    background-image: linear-gradient(196deg, #013244 45%, #012235 calc(45% + 2px));
+  }
 }
 
 .paymentCard:hover{

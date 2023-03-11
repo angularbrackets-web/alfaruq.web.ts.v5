@@ -122,12 +122,15 @@ export default function CountDownTimer() {
     
 
       return (
-        <section>
-          <div>
+        
+
+      
+
+          <div className="p-[5%] sm:p-[4%] lg-p-[0%] sm:m-1 sm:mb-6  bg-lime-500 text-slate-900 rounded-lg mb-10">
             <h1 className="text-3xl my-5">{currentEvent.name} </h1>
             <h2 className="text-3xl my-5">{timerComponents?.length ? timerComponents : <span>Time's up!</span>}</h2>
           </div>
-        </section>    
+            
       );
     }
 

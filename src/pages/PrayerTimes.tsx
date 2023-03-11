@@ -28,8 +28,117 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
 
 
     return(
-        <section className="min-h-screen bg-gradient-to-br from-emerald-400 to-blue-300 px-10">
-            <div className="container mx-auto px-4 sm:px-8">
+
+      <section className="min-h-screen text-lime-300 angledBgSlate">
+            <div className="flex flex-col p-[5%]">
+  <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div className="inline-block min-w-full sm:px-6 lg:px-8 border border-lime-900 rounded-lg px-[3%] py-[3%] lg:py-[2%]">
+      <div className="mb-4">
+        <h1 className="text-3xl font-extrabold">Prayer Times</h1>
+        <h6 className="text-md font-thin text-slate-200">{todayLocaleDate}</h6>
+      <h6 className="text-md font-thin text-slate-200">{hijriDate}</h6>
+      </div>
+
+
+      <CountDownTimer />
+
+      <div className="overflow-hidden">
+        <table className="min-w-full text-left text-sm font-light mb-4">
+          <thead className=" border-b-4 border-lime-900 text-cyan-300 font-medium ">
+            <tr>
+              <th scope="col" className="px-6 py-4">Prayer</th>
+              <th scope="col" className="px-6 py-4">Adhaan</th>
+              <th scope="col" className="px-6 py-4">Iqamah</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-slate-600">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">
+                <h6>Fajr</h6>
+                <h6>صلاة الفجر</h6>
+              </td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.fajrAzzan}</td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.fajrIqamah}</td>
+            </tr>
+            <tr className="border-b border-slate-600">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">
+                <h6>Sunrise</h6>
+                <h6>الشروق</h6>
+              </td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.sunriseTime}</td>
+              <td className="whitespace-nowrap px-6 py-4"></td>
+            </tr>
+            <tr className="border-b border-slate-600">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">
+                <h6>Dhuhr</h6>
+                <h6>صلاة الظهر</h6>
+              </td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.zohrAzzan}</td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.zohrIqamah}</td>
+            </tr>
+            <tr className="border-b border-slate-600">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">
+                <h6>Asr</h6>
+                <h6>صلاة العصر</h6>
+              </td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.asrAzzan}</td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.asrIqamah}</td>
+            </tr>
+            <tr className="border-b border-slate-600">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">
+                <h6>Maghrib</h6>
+                <h6>صلاة المغرب</h6>
+              </td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.maghribAzzan}</td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.maghribIqamah}</td>
+            </tr>
+            <tr className="border-b border-slate-600">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">
+                <h6>Isha</h6>
+                <h6>صلاة العشاء</h6>
+              </td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.ishaAzzan}</td>
+              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.ishaIqamah}</td>
+            </tr>
+            <tr className="border-b border-slate-600">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">
+                <h6>Jummah 1</h6>
+                <h6>صَلَاة ٱلْجُمُعَة 1</h6>
+              </td>
+              <td className="whitespace-nowrap px-6 py-4">01:45 PM</td>
+              <td className="whitespace-nowrap px-6 py-4"></td>
+            </tr>
+            <tr className="border-b border-slate-600">
+              <td className="whitespace-nowrap px-6 py-4 font-medium">
+                <h6>Jummah 2</h6>
+                <h6>صَلَاة ٱلْجُمُعَة 2</h6>
+              </td>
+              <td className="whitespace-nowrap px-6 py-4">03:00 PM</td>
+              <td className="whitespace-nowrap px-6 py-4"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <div className="container mx-auto px-4 sm:px-8">
   <div className='-my-36'>
     <div className=''>
       <h2 className="text-5xl font-semibold leading-tight">Prayer Times</h2>
@@ -80,9 +189,7 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
                     ></Image>
                   </div>
                   <div className="ml-3">
-                    <p>
-                      Fajr
-                    </p>
+                    <p>Fajr</p>
                     <p>صلاة الفجر</p>
                   </div>
                 </div>
@@ -295,15 +402,16 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
 
 
 
-</div>
-{/* <div className='z-10'>
-  <svg version="1.1" className=" absolute top-20 right-20 h-52 w-52 fill-gray-500" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-	 viewBox="0 0 48 48">
-<path d="M24,4C12.972,4,4,12.972,4,24s8.972,20,20,20s20-8.972,20-20S35.028,4,24,4z M28.561,30.561
-	C28.268,30.854,27.884,31,27.5,31s-0.768-0.146-1.061-0.439l-5-5C21.158,25.279,21,24.898,21,24.5v-11c0-0.829,0.671-1.5,1.5-1.5
-	s1.5,0.671,1.5,1.5v10.379l4.561,4.561C29.146,29.025,29.146,29.975,28.561,30.561z"/>
-</svg>
 </div> */}
+
+
+
+
+
+
+
+
         </section>
+
     )
 }
