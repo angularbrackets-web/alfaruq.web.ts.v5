@@ -8,6 +8,10 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Programs from './Programs'
 import Donate from './Donate'
+import Hero from './Hero'
+import BasicGrid from './BasicGrid'
+import PhotoGrid from './PhotoGrid'
+import AnimatedGrid from './AnimatedGrid'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,7 +32,10 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        
+        <AnimatedGrid />
+        <PhotoGrid />
+        <BasicGrid />
+        <Hero />
         <HomePage />
         <PrayerTimes />
         <Donate />

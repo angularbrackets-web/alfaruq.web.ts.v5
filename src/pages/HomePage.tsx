@@ -36,57 +36,29 @@ const HomePage = () => {
         <div className="hero min-h-screen bg-topleft-teal bgTealBlueGradient bg-bottomright-white">
                         <div className="container mx-auto flex flex-col md:flex-row items-center">
                             <div className="text-center md:text-left mb-6 md:mb-0">
-                                <h1 className="text-6xl font-bold mb-6 text-teal-900">Welcome to Al Faruq Islamic Center</h1>
-                                <p className="text-green-900 text-xl mb-8">Join us for daily prayers, weekly programs, community events and much more.</p>
+                                <h1 className="text-4xl font-bold mb-6 text-teal-900">Welcome to Al Faruq Islamic Center</h1>
+                                <p className="text-green-900 text-md mb-8">Join us for daily prayers, weekly programs, community events and much more.</p>
                                 
-                                <div className="flex mb-8">
-                                  <div>
-                                    <div className="flex items-center space-x-1 text-xl px-2 m-2 bg-gradient-to-br text-emerald-600 bg-emerald-200 rounded-full pt-pb-point2">
-                                      <div className="bg-emerald-900 rounded-full w-h-point4rem m-3"></div>
-                                      <div>Da'wah Programs</div>
-                                    </div>
-
-                                    <div className="flex items-center space-x-1 text-xl px-2 m-2 text-emerald-800 bg-emerald-300 rounded-full pt-pb-point2">
-                                      <div className="bg-emerald-900 rounded-full w-h-point4rem m-3"></div>
-                                      <div>Quran / Islamic Studies</div>
-                                    </div>
-
-                                    <div className="flex items-center space-x-1 text-xl px-2 m-2 text-emerald-200 bg-emerald-500 rounded-full pt-pb-point2">
-                                      <div className="bg-emerald-900 rounded-full w-h-point4rem m-3"></div>
-                                      <div>Youth Programs</div>
-                                    </div>
-
-                                    <div className="flex items-center space-x-1 text-xl px-2 m-2 text-emerald-200 bg-emerald-700 rounded-full pt-pb-point2">
-                                      <div className="bg-emerald-900 rounded-full w-h-point4rem m-3"></div>
-                                      <div>Education</div>
-                                    </div>
+                                <div className="grid grid-cols-2 gap-2 items-stretch mb-8 text-left text-sm">
+                                  <div className="bg-teal-900 text-gray-200 rounded-md p-[10%]">
+                                    <h6 className="mb-2 ml-2">Da'wah Programs</h6>
+                                    <h6 className="mb-2 ml-2">Quran / Islamic Studies</h6>
+                                    <h6 className="mb-2 ml-2">Youth Programs</h6>
+                                    <h6 className="mb-2 ml-2">Education</h6>                                    
                                   </div>
 
-                                  <div>
-                                    <div className="flex items-center space-x-1 text-xl px-2 m-2 text-indigo-600 bg-indigo-200 rounded-full pt-pb-point2">
-                                      <div className="bg-emerald-900 rounded-full w-h-point4rem m-3"></div>
-                                      <div>Wedding Services</div>
-                                    </div>
-
-                                    <div className="flex items-center space-x-1 text-xl px-2 m-2 text-indigo-800 bg-indigo-300 rounded-full pt-pb-point2">
-                                      <div className="bg-emerald-900 rounded-full w-h-point4rem m-3"></div>
-                                      <div>Counselling</div>
-                                    </div>
-
-                                    <div className="flex items-center space-x-1 text-xl px-2 m-2 text-indigo-200 bg-indigo-500 rounded-full pt-pb-point2">
-                                      <div className="bg-emerald-900 rounded-full w-h-point4rem m-3"></div>
-                                      <div>Funeral</div>
-                                    </div>
+                                  <div className="bg-teal-900 text-gray-200 rounded-md p-[10%]">
+                                    <h6 className="">Wedding Services</h6>
+                                    <h6 className="">Counselling</h6>
+                                    <h6 className="">Funeral</h6>                                   
                                   </div>
                                 </div>
 
                                 <a href="#services" className="bg-blue-900 text-gray-200 px-5 py-3 rounded-lg hover:bg-blue-500 hover:text-gray-200">Learn More</a>
-                                
-                               
-
+                                                           
 
                             </div>
-                            <div className="w-full md:w-4/5 lg:w-2/3 xl:w-2/5 md:ml-auto">
+                            <div className=" hidden md:block md:w-4/5 lg:w-2/3 xl:w-2/5 md:ml-auto">
                                 <Image src={masjidVectorImage} alt='masjid' ></Image>
                             </div>
                         </div>
