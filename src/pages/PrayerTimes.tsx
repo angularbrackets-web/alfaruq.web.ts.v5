@@ -43,7 +43,7 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
       <CountDownTimer />
 
       <div className="overflow-hidden">
-        <table className="min-w-full text-left text-sm font-light mb-4">
+        <table className="min-w-full text-left text-xl font-light mb-4">
           <thead className=" border-b-4 border-lime-900 text-cyan-300 font-medium ">
             <tr>
               <th scope="col" className="px-6 py-4">Prayer</th>

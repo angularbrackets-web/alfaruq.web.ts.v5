@@ -35,7 +35,7 @@ const events: Event[] = [
     date: new Date().setHours(+sunriseTime[0], +sunriseTime[1], 0),
   },
   {
-    name: "Next Prayer : Dhuhr Adhaan in ",
+    name: "Next Prayer : <span class='nextAdhaan'>Dhuhr Adhaan</span> in ",
     date: new Date().setHours(+dhuhrAdhaan[0], +dhuhrAdhaan[1], 0),
   },
   {
@@ -112,9 +112,15 @@ export default function CountDownTimer() {
       return;
     }
 
+
+    const isLast = Object.keys(timeLeft).indexOf(interval) === Object.keys(timeLeft).length - 1;
+
+
     timerComponents.push(
+      
+
       <span key={interval}>
-        {timeLeft[interval]} {interval}{" "}
+        <span className="text-2xl">{timeLeft[interval]}</span> {interval} { !isLast ? " : " : ""}
       </span>
     );
   });
@@ -126,9 +132,10 @@ export default function CountDownTimer() {
 
       
 
-          <div className="p-[5%] sm:p-[4%] lg-p-[0%] sm:m-1 sm:mb-6  bg-lime-500 text-slate-900 rounded-lg mb-10">
-            <h1 className="text-3xl my-5">{currentEvent.name} </h1>
-            <h2 className="text-3xl my-5">{timerComponents?.length ? timerComponents : <span>Time's up!</span>}</h2>
+          <div className="px-[20px] py-[10px] sm:p-[4%] lg-p-[0%] sm:m-1 sm:mb-2  bg-lime-500 text-slate-900 rounded-lg mb-2">
+            <div className="nextPrayer" dangerouslySetInnerHTML={{ __html: `${currentEvent.name}` }} ></div>          
+            
+            <h2 className="text-md my-1 font-extrabold">{timerComponents?.length ? timerComponents : <span>Time's up!</span>}</h2>
           </div>
             
       );
