@@ -132,7 +132,7 @@ export default function CountDownTimer() {
 
       
 
-          <div className="px-[20px] py-[10px] sm:p-[4%] lg-p-[0%] sm:m-1 sm:mb-2  bg-lime-500 text-slate-900 rounded-lg mb-2">
+          <div className="p-4  bg-lime-500 text-slate-900 rounded-lg mb-2">
             <div className="nextPrayer" dangerouslySetInnerHTML={{ __html: `${currentEvent.name}` }} ></div>          
             
             <h2 className="text-md my-1 font-extrabold">{timerComponents?.length ? timerComponents : <span>Time's up!</span>}</h2>
