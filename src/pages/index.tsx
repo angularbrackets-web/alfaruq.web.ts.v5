@@ -12,6 +12,7 @@ import Hero from './Hero'
 import BasicGrid from './BasicGrid'
 import PhotoGrid from './PhotoGrid'
 import AnimatedGrid from './AnimatedGrid'
+import TTable from './TTable'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -32,6 +33,7 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
+        <TTable />
         <AnimatedGrid />
         <PhotoGrid />
         <BasicGrid />

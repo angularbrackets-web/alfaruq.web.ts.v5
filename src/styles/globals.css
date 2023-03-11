@@ -154,19 +154,17 @@
 
 .bgSlide{
   background-image: url("../../public/Fadliga.Ramadaanka.jpeg");
-  background-size: cover;
+  
 }
 
 .bgSlideTall{
   background-image: url("../../public/FiqhOfRamadan.jpeg");
-  background-size: cover;
-  background-position: center;
+  
 }
 
 .bgSlideWide{
   background-image: url("../../public/LeadersOfTomorrow.png");
-  background-size: cover;
-  background-position: center;
+  
 }
 
 .animated-grid {
