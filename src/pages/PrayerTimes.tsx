@@ -46,75 +46,71 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
         <table className="min-w-full text-left text-xl font-light mb-4">
           <thead className=" border-b-4 border-cyan-900 text-cyan-300 font-medium ">
             <tr>
-              <th scope="col" className="px-6 py-4">Prayer</th>
-              <th scope="col" className="px-6 py-4">Adhaan</th>
-              <th scope="col" className="px-6 py-4">Iqamah</th>
+              <th scope="col" className="px-3 py-4">Prayer</th>
+              <th scope="col">Adhaan</th>
+              <th scope="col">Iqamah</th>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b border-lime-900">
-              <td className="whitespace-nowrap px-6 py-4 font-extralight flex justify-between">
-                <span className='font-bold'>Fajr </span>
-                <span className='badgeSlateLime w-20 text-right'>الفجر</span>
+              <td className="whitespace-nowrap p-3 font-extralight">
+                <h6 className='font-bold'>Fajr <span className='badgeSlateLime w-20 text-right'>الفجر</span></h6>                
               </td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.fajrAzzan}</td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.fajrIqamah}</td>
+              <td className="whitespace-nowrap">{prayerTimes.fajrAzzan}</td>
+              <td className="whitespace-nowrap">{prayerTimes.fajrIqamah}</td>
             </tr>
             <tr className="border-b border-lime-900">
-              <td className="whitespace-nowrap px-6 py-4 font-extralight flex justify-between">
-                <span className='font-bold'>Sunrise </span>
-                <span className='badgeSlateLime w-20 text-right'>الشروق</span>
+              <td className="whitespace-nowrap p-3 font-extralight">
+                <span className='font-bold'>Sunrise <span className='badgeSlateLime w-20 text-right'>الشروق</span></span>                
               </td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.sunriseTime}</td>
-              <td className="whitespace-nowrap px-6 py-4"></td>
+              <td className="whitespace-nowrap">{prayerTimes.sunriseTime}</td>
+              <td className="whitespace-nowrap"></td>
             </tr>
             <tr className="border-b border-lime-900">
-              <td className="whitespace-nowrap px-6 py-4 font-extralight flex justify-between">
-                <span className='font-bold'>Dhuhr </span>
-                <span className='badgeSlateLime w-20 text-right'>الظهر</span>
+              <td className="whitespace-nowrap p-3 font-extralight">
+                <span className='font-bold'>Dhuhr <span className='badgeSlateLime w-20 text-right'>الظهر</span></span>
+                
               </td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.zohrAzzan}</td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.zohrIqamah}</td>
+              <td className="whitespace-nowrap">{prayerTimes.zohrAzzan}</td>
+              <td className="whitespace-nowrap">{prayerTimes.zohrIqamah}</td>
             </tr>
             <tr className="border-b border-lime-900">
-              <td className="whitespace-nowrap px-6 py-4 font-extralight flex justify-between">
-                <span className='font-bold'>Asr </span>
-                <span className='badgeSlateLime w-20 text-right'>العصر</span>
+              <td className="whitespace-nowrap p-3 font-extralight">
+                <span className='font-bold'>Asr <span className='badgeSlateLime w-20 text-right'>العصر</span></span>
+                
               </td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.asrAzzan}</td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.asrIqamah}</td>
+              <td className="whitespace-nowrap">{prayerTimes.asrAzzan}</td>
+              <td className="whitespace-nowrap">{prayerTimes.asrIqamah}</td>
             </tr>
             <tr className="border-b border-lime-900">
-              <td className="whitespace-nowrap px-6 py-4 font-extralight flex justify-between">
-                <span className='font-bold'>Maghrib </span>
-                <span className='badgeSlateLime w-20 text-right'>المغرب</span>
+              <td className="whitespace-nowrap p-3 font-extralight">
+                <span className='font-bold'>Maghrib <span className='badgeSlateLime w-20 text-right'>المغرب</span></span>
+                
               </td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.maghribAzzan}</td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.maghribIqamah}</td>
+              <td className="whitespace-nowrap">{prayerTimes.maghribAzzan}</td>
+              <td className="whitespace-nowrap">{prayerTimes.maghribIqamah}</td>
             </tr>
             <tr className="border-b border-lime-900">
-              <td className="whitespace-nowrap px-6 py-4 font-extralight flex justify-between">
-                <span className='font-bold'>Isha </span>
-                <span className='badgeSlateLime w-20 text-right'>العشاء</span>
+              <td className="whitespace-nowrap p-3 font-extralight">
+                <span className='font-bold'>Isha <span className='badgeSlateLime w-20 text-right'>العشاء</span></span>
+                
               </td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.ishaAzzan}</td>
-              <td className="whitespace-nowrap px-6 py-4">{prayerTimes.ishaIqamah}</td>
+              <td className="whitespace-nowrap">{prayerTimes.ishaAzzan}</td>
+              <td className="whitespace-nowrap">{prayerTimes.ishaIqamah}</td>
             </tr>
             <tr className="border-b border-lime-900">
-              <td className="whitespace-nowrap px-6 py-4 font-extralight flex justify-between">
-                <span className='font-bold'>Jummah 1</span>
-                <span className='badgeSlateLime w-20 text-right'>ٱلْجُمُعَة 1</span>
+              <td className="whitespace-nowrap p-3 font-extralight">
+                <span className='font-bold'>Jummah 1 <span className='badgeSlateLime w-20 text-right'>ٱلْجُمُعَة 1</span></span>                
               </td>
-              <td className="whitespace-nowrap px-6 py-4">01:45 PM</td>
-              <td className="whitespace-nowrap px-6 py-4"></td>
+              <td className="whitespace-nowrap">01:45 PM</td>
+              <td className="whitespace-nowrap"></td>
             </tr>
             <tr className="border-b border-lime-900">
-              <td className="whitespace-nowrap px-6 py-4 font-extralight flex justify-between">
-                <span className='font-bold'>Jummah </span>
-                <span className='badgeSlateLime w-20 text-right'>ٱلْجُمُعَة 2</span>
+              <td className="whitespace-nowrap p-3 font-extralight">
+                <span className='font-bold'>Jummah <span className='badgeSlateLime w-20 text-right'>ٱلْجُمُعَة 2</span></span>                
               </td>
-              <td className="whitespace-nowrap px-6 py-4">03:00 PM</td>
-              <td className="whitespace-nowrap px-6 py-4"></td>
+              <td className="whitespace-nowrap">03:00 PM</td>
+              <td className="whitespace-nowrap"></td>
             </tr>
           </tbody>
         </table>
