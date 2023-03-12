@@ -24,11 +24,11 @@ export default function Donate(){
   const buttonId = '';
 
     return(
-        <section className='min-h-screen bg-gradient-to-br from-gray-300 to-yellow-300 text-gray-900'>
+        <section id="Donate" className='min-h-screen angledBgSlateLight2 text-lime-500'>
           <div className='container donateBg'>
-            <h1 className='text-6xl mb-6 text-emerald-800'>Donate Now</h1>
-            <h1 className='text-3xl mb-3 text-green-600'>Make a difference</h1>
-            <p className='text-xl mb-16 text-yellow-700 bg-yellow-400 border border-yellow-500 rounded-lg w-fit p-1'>Your help will have a significant impact on our community</p>
+            <h1 className='text-6xl mb-6 text-lime-500 font-extrabold'>Donate Now</h1>
+            <h1 className='text-3xl mb-6 text-lime-600'>Make a difference</h1>
+            <p className='text-xs md:text-lg lg:text-xl mb-16 text-slate-700 bg-lime-100 rounded-lg w-fit p-1'>Your help will have a significant impact on our community</p>
           <CardSelector cards={cards} buttonId={buttonId} />
           {/* <DonateButton donateButtonId={buyButtonId} publishableKey={publishableKey} /> */}
         </div>

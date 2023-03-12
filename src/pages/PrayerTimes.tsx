@@ -29,14 +29,14 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
 
     return(
 
-      <section className="min-h-screen text-lime-300 angledBgSlate">
+      <section id="PrayerTimes" className="min-h-screen text-lime-600 angledBgSlateLight pt-16">
             <div className="flex flex-col p-2 md:p-6">
   <div className="overflow-x-auto">
     <div className="inline-block min-w-full sm:p-0 lg:px-8 px-[3%] py-0">
       <div className="mb-4">
-        <h1 className="text-3xl font-extrabold mb-2">Prayer Times</h1>
-        <h6 className="text-md font-thin text-slate-200 mb-2">{todayLocaleDate}</h6>
-      <h6 className="text-md font-thin text-slate-200">{hijriDate}</h6>
+        <h1 className="text-3xl font-extrabold mb-2 text-lime-600">Prayer Times</h1>
+        <h6 className="text-md font-thin text-cyan-600 mb-2">{todayLocaleDate}</h6>
+      <h6 className="text-md font-thin text-cyan-600">{hijriDate}</h6>
       </div>
 
 
@@ -44,7 +44,7 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
 
       <div className="overflow-hidden">
         <table className="min-w-full text-left text-xl font-light mb-4">
-          <thead className=" border-b-4 border-cyan-900 text-cyan-300 font-medium ">
+          <thead className=" border-b-4 border-cyan-900 text-cyan-600 font-medium ">
             <tr>
               <th scope="col" className="px-3 py-4">Prayer</th>
               <th scope="col">Adhaan</th>
@@ -54,21 +54,21 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
           <tbody>
             <tr className="border-b border-lime-900">
               <td className="whitespace-nowrap p-3 font-extralight">
-                <h6 className='font-bold'>Fajr <span className='badgeSlateLime w-20 text-right'>الفجر</span></h6>                
+                <h6 className='font-bold'>Fajr <span className='badgeSlateLimeLight w-20 text-right'>الفجر</span></h6>                
               </td>
               <td className="whitespace-nowrap">{prayerTimes.fajrAzzan}</td>
               <td className="whitespace-nowrap">{prayerTimes.fajrIqamah}</td>
             </tr>
             <tr className="border-b border-lime-900">
               <td className="whitespace-nowrap p-3 font-extralight">
-                <span className='font-bold'>Sunrise <span className='badgeSlateLime w-20 text-right'>الشروق</span></span>                
+                <span className='font-bold'>Sunrise <span className='badgeSlateLimeLight w-20 text-right'>الشروق</span></span>                
               </td>
               <td className="whitespace-nowrap">{prayerTimes.sunriseTime}</td>
               <td className="whitespace-nowrap"></td>
             </tr>
             <tr className="border-b border-lime-900">
               <td className="whitespace-nowrap p-3 font-extralight">
-                <span className='font-bold'>Dhuhr <span className='badgeSlateLime w-20 text-right'>الظهر</span></span>
+                <span className='font-bold'>Dhuhr <span className='badgeSlateLimeLight w-20 text-right'>الظهر</span></span>
                 
               </td>
               <td className="whitespace-nowrap">{prayerTimes.zohrAzzan}</td>
@@ -76,7 +76,7 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
             </tr>
             <tr className="border-b border-lime-900">
               <td className="whitespace-nowrap p-3 font-extralight">
-                <span className='font-bold'>Asr <span className='badgeSlateLime w-20 text-right'>العصر</span></span>
+                <span className='font-bold'>Asr <span className='badgeSlateLimeLight w-20 text-right'>العصر</span></span>
                 
               </td>
               <td className="whitespace-nowrap">{prayerTimes.asrAzzan}</td>
@@ -84,7 +84,7 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
             </tr>
             <tr className="border-b border-lime-900">
               <td className="whitespace-nowrap p-3 font-extralight">
-                <span className='font-bold'>Maghrib <span className='badgeSlateLime w-20 text-right'>المغرب</span></span>
+                <span className='font-bold'>Maghrib <span className='badgeSlateLimeLight w-20 text-right'>المغرب</span></span>
                 
               </td>
               <td className="whitespace-nowrap">{prayerTimes.maghribAzzan}</td>
@@ -92,7 +92,7 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
             </tr>
             <tr className="border-b border-lime-900">
               <td className="whitespace-nowrap p-3 font-extralight">
-                <span className='font-bold'>Isha <span className='badgeSlateLime w-20 text-right'>العشاء</span></span>
+                <span className='font-bold'>Isha <span className='badgeSlateLimeLight w-20 text-right'>العشاء</span></span>
                 
               </td>
               <td className="whitespace-nowrap">{prayerTimes.ishaAzzan}</td>
@@ -100,14 +100,14 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
             </tr>
             <tr className="border-b border-lime-900">
               <td className="whitespace-nowrap p-3 font-extralight">
-                <span className='font-bold'>Jummah 1 <span className='badgeSlateLime w-20 text-right'>ٱلْجُمُعَة 1</span></span>                
+                <span className='font-bold'>Jummah 1 <span className='badgeSlateLimeLight w-20 text-right'>ٱلْجُمُعَة 1</span></span>                
               </td>
               <td className="whitespace-nowrap">01:45 PM</td>
               <td className="whitespace-nowrap"></td>
             </tr>
             <tr className="border-b border-lime-900">
               <td className="whitespace-nowrap p-3 font-extralight">
-                <span className='font-bold'>Jummah <span className='badgeSlateLime w-20 text-right'>ٱلْجُمُعَة 2</span></span>                
+                <span className='font-bold'>Jummah <span className='badgeSlateLimeLight w-20 text-right'>ٱلْجُمُعَة 2</span></span>                
               </td>
               <td className="whitespace-nowrap">03:00 PM</td>
               <td className="whitespace-nowrap"></td>

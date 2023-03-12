@@ -59,17 +59,17 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-teal-900 to-emerald-600 text-emerald-100">
+    <section id="Programs" className="min-h-screen angledBgSlateLight">
       <div className="container mx-auto">
-      <h1 className="text-3xl font-bold mb-8">Programs</h1>
+      <h1 className="text-3xl font-bold mb-8 text-lime-500">Programs</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {programs.map(program => (
-          <div key={program.id} className="border border-gray-100 bg-gray-100 rounded-2xl p-2 ">
-            <div className="w-full bg-gray-900 h-48 p-16 text-xl md:text-2xl lg:text-3xl rounded-t-2xl">
+          <div key={program.id} className="rounded-2xl angledBgDarkTeal">
+            <div className="w-full text-lime-100 p-6 text-xl md:text-2xl lg:text-3xl rounded-t-2xl">
               <h1>{program.title}</h1>
             </div>
-            <div className="bg-gray-100 text-teal-800 p-10 overflow-y-auto rounded-b-2xl angledBgPaleGreen min-h-[200px]"  dangerouslySetInnerHTML={{ __html: program.description}} />
+            <div className=" text-lime-100 p-6 overflow-y-auto rounded-b-2xl min-h-[200px]"  dangerouslySetInnerHTML={{ __html: program.description}} />
           </div>
         ))}
       </div>

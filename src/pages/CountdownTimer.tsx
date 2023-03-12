@@ -43,7 +43,7 @@ const events: Event[] = [
     date: new Date().setHours(+dhuhrIqamah[0], +dhuhrIqamah[1], 0),
   },
   {
-    name: "Next Prayer : Asr Adhaan in",
+    name: "Next Prayer : <span class='nextAdhaan'>Asr Adhaan</span> in",
     date: new Date().setHours(+asrAdhaan[0], +asrAdhaan[1], 0),
   },
   {
@@ -132,7 +132,7 @@ export default function CountDownTimer() {
 
       
 
-          <div className="p-4  bg-lime-500 text-slate-900 rounded-lg mb-2">
+          <div className="p-4  bg-lime-400 text-lime-900 rounded-lg mb-2">
             <div className="nextPrayer" dangerouslySetInnerHTML={{ __html: `${currentEvent.name}` }} ></div>          
             
             <h2 className="text-md my-1 font-extrabold">{timerComponents?.length ? timerComponents : <span>Time's up!</span>}</h2>
