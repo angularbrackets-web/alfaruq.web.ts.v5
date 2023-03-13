@@ -66,7 +66,7 @@ export default function Programs() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {programs.map(program => (
           <div key={program.id} className="rounded-2xl angledBgDarkTeal">
-            <div className="w-full text-lime-100 p-6 text-xl md:text-2xl lg:text-3xl rounded-t-2xl">
+            <div className="w-full text-cyan-100 p-6 text-4xl md:text-4xl rounded-t-2xl">
               <h1>{program.title}</h1>
             </div>
             <div className=" text-lime-100 p-6 overflow-y-auto rounded-b-2xl min-h-[200px]"  dangerouslySetInnerHTML={{ __html: program.description}} />

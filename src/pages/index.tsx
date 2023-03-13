@@ -14,6 +14,7 @@ import PhotoGrid from './PhotoGrid'
 import AnimatedGrid from './AnimatedGrid'
 import TTable from './TTable'
 import HeroGrid from './HeroGrid'
+import Maps from './Maps'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -38,6 +39,7 @@ export default function Home() {
         <PrayerTimes />
         <Donate />
         <Programs />
+        <Maps />
         <Footer />
       </main>
     </>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRef } from "react"
 import Link from "next/link";
+import { FaMoneyCheckAlt } from 'react-icons/fa';
 
 const Navbar = () => {
 
@@ -17,7 +18,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-gray-800 sticky top-0 z-30">
+    <nav className="bgDarkTeal sticky top-0 z-30">
       <div className="md:container px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* <div className="flex-shrink-0">
@@ -72,6 +73,7 @@ const Navbar = () => {
 
 
           <div className="hidden md:block">
+            <div className='flex gap-28'>
             <div className="ml-10 flex items-baseline space-x-4">
               <Link href="#Home" className="text-lime-100 hover:text-lime-500 hover:text-lg px-3 py-2 rounded-md text-sm font-medium">                
                   Home                
@@ -82,7 +84,14 @@ const Navbar = () => {
               <Link href="#Programs" className="text-lime-100 hover:text-lime-500 hover:text-lg px-3 py-2 rounded-md text-sm font-medium">                
                   Programs                
               </Link>
+              
             </div>
+            <div className=''>
+            <Link href='#Donate' className="flex items-center align-middle justify-end h-12 px-10 py-2 text-lg text-slate-800 font-extrabold transition-colors duration-150 bg-lime-500 rounded-lg focus:shadow-outline hover:bg-cyan-500"><span className='mr-3'><FaMoneyCheckAlt /></span>Donate</Link>
+            </div>
+            </div>
+            
+            
           </div>
           <div className="-mr-2 flex md:hidden">
             <button

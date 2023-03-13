@@ -23,15 +23,15 @@ const ishaIqamah = prayerTimes.ishaIqamah.split(":");
 
 const events: Event[] = [
   {
-    name: "Next Prayer : Fajr Adhaan in ",
+    name: "Next Prayer : <span class='nextAdhaan'>Fajr Adhaan</span> in ",
     date: new Date().setHours(+fajrAdhaan[0], +fajrAdhaan[1], 0),
   },
   {
-    name: "It's time for Fajr, Iqamah in ",
+    name: "It's time for <span class='nextAdhaan'>Fajr, Iqamah</span> in ",
     date: new Date().setHours(+fajrIqamah[0], +fajrIqamah[1], 0),
   },
   {
-    name: "Sunrise in ",
+    name: "<span class='nextAdhaan'>Sunrise</span> in ",
     date: new Date().setHours(+sunriseTime[0], +sunriseTime[1], 0),
   },
   {
@@ -39,7 +39,7 @@ const events: Event[] = [
     date: new Date().setHours(+dhuhrAdhaan[0], +dhuhrAdhaan[1], 0),
   },
   {
-    name: "It's time for Dhuhr, Iqamah in ",
+    name: "It's time for <span class='nextAdhaan'>Dhuhr, Iqamah</span> in ",
     date: new Date().setHours(+dhuhrIqamah[0], +dhuhrIqamah[1], 0),
   },
   {
@@ -47,23 +47,23 @@ const events: Event[] = [
     date: new Date().setHours(+asrAdhaan[0], +asrAdhaan[1], 0),
   },
   {
-    name: "It's time for Asr, Iqamah in ",
+    name: "It's time for <span class='nextAdhaan'>Asr, Iqamah</span> in ",
     date: new Date().setHours(+asrIqamah[0], +asrIqamah[1], 0),
   },
   {
-    name: "Next Prayer : Maghrib Adhaan in ",
+    name: "Next Prayer : <span class='nextAdhaan'>Maghrib Adhaan</span> in ",
     date: new Date().setHours(+maghribAdhaan[0], +maghribAdhaan[1], 0),
   },
   {
-    name: "It's time for Maghrib, Iqamah in ",
+    name: "It's time for <span class='nextAdhaan'>Maghrib, Iqamah</span> in ",
     date: new Date().setHours(+maghribIqamah[0], +maghribIqamah[1], 0),
   },
   {
-    name: "Next Prayer : Isha Adhaan in ",
+    name: "Next Prayer : <span class='nextAdhaan'>Isha Adhaan</span> in ",
     date: new Date().setHours(+ishaAdhaan[0], +ishaAdhaan[1], 0),
   },
   {
-    name: "It's time for Isha, Iqamah in ",
+    name: "It's time for <span class='nextAdhaan'>Isha, Iqamah</span> in ",
     date: new Date().setHours(+ishaIqamah[0], +ishaIqamah[1], 0),
   },
 ];

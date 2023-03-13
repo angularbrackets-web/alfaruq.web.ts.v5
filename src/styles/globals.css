@@ -95,7 +95,7 @@
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
-
+.bgDarkTeal{background-color: #013244;}
 .angledBgPaleGreen{
   background-image: linear-gradient(196deg, #f3f7ea 70%, #F4F4F4 calc(70% + 2px));
 }
