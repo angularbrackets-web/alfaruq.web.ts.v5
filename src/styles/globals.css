@@ -80,7 +80,7 @@
 .nextAdhaan{background-color: #023856; color:#afe411; padding: 1px 10px 1px 10px; border-radius: 50px;}
 
 .badgeSlateLime{background-color: #000; color:#afe411; padding: 1px 10px 1px 10px; border-radius: 50px;}
-.badgeSlateLimeLight{background-color: #d6dcc9; color:#6e794b; padding: 1px 10px 1px 10px; border-radius: 50px;}
+.badgeSlateLimeLight{background-color: #e5eada; color:#4b6e79; padding: 1px 10px 1px 10px; border-radius: 50px;}
 
 .pt-pb-point2{
   padding-top: 0.2em; padding-bottom: 0.2rem
@@ -105,6 +105,10 @@
 }
 
 .angledBgDarkTeal{
+  background-image: linear-gradient(196deg, #072b2b 70%, #333 calc(70% + 2px));
+}
+
+.angledBgDarkTeal2{
   background-image: linear-gradient(196deg, #125050 70%, #333 calc(70% + 2px));
 }
 

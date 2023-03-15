@@ -29,14 +29,14 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
 
     return(
 
-      <section id="PrayerTimes" className="min-h-screen text-lime-600 angledBgSlateLight pt-16">
+      <section id="PrayerTimes" className="min-h-screen text-lime-700 angledBgSlateLight pt-16">
             <div className="flex flex-col p-2 md:p-6">
   <div className="overflow-x-auto">
     <div className="inline-block min-w-full sm:p-0 lg:px-8 px-[3%] py-0">
       <div className="mb-4">
         <h1 className="text-3xl font-extrabold mb-2 text-lime-600">Prayer Times</h1>
-        <h6 className="text-md font-medium text-cyan-500 mb-2">{todayLocaleDate}</h6>
-      <h6 className="text-md font-medium text-cyan-500">{hijriDate}</h6>
+        <h6 className="text-md font-semibold text-cyan-600 mb-2">{todayLocaleDate}</h6>
+      <h6 className="text-md font-semibold text-cyan-600">{hijriDate}</h6>
       </div>
 
 

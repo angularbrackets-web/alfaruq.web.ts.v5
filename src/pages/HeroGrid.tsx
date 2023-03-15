@@ -14,7 +14,7 @@ export default function HeroGrid(){
     <h1 className="text-2xl mb-6">Welcome to </h1>
     <h1 className="text-6xl mb-6 font-extrabold">Al Faruq Islamic Center</h1>
     <a href="https://goo.gl/maps/LfjqyUzs7dtqjeqF9" target="_blank">
-    <p className="bg-lime-100 rounded-md text-lime-900 mb-6 font-extralight flex items-center px-5 py-1 w-fit"><FaLocationArrow /><span className="ml-5">4410 127 Street SW, Edmonton, Alberta</span></p>
+    <p className="bg-lime-100 rounded-md text-slate-900 mb-6 flex items-center px-5 py-1 w-fit"><FaLocationArrow /><span className="ml-5">4410 127 Street SW, Edmonton, Alberta</span></p>
     </a>    
     <p className="text-md text-cyan-300">Join us for daily prayers, weekly programs, community events and much more.</p>
   </div>
