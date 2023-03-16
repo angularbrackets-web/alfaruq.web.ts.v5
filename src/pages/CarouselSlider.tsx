@@ -28,11 +28,6 @@ const CarouselSlider = ({ slides }: CarouselProps): JSX.Element => {
     setSlidePaused(true);
   });
 
-  const resumeSlide = (() => {
-    setSlidePaused(false);    
-  });
-
-
 
   const handleClick = (direction: "prev" | "next") => {
     if (intervalRef.current) clearInterval(intervalRef.current);
@@ -65,7 +60,7 @@ const CarouselSlider = ({ slides }: CarouselProps): JSX.Element => {
             i === index ? "block carousel-slide-active" : "hidden"
           } absolute top-0 left-0 w-full h-full`}
           onMouseEnter={pauseSlide}
-          onMouseLeave={resumeSlide}
+          onMouseLeave={() => handleClick("next")}
         >
           {slide}
         </div>
@@ -73,7 +68,7 @@ const CarouselSlider = ({ slides }: CarouselProps): JSX.Element => {
 
       <div className="Absolute-Center left-0 flex items-center" 
       onMouseEnter={pauseSlide}
-      onMouseLeave={resumeSlide}>
+      onMouseLeave={() => handleClick("next")}>
         <button className="w-10 h-10" onClick={() => handleClick("prev")}>
           <div className="bg-gray-600 text-white bg-opacity-50 rounded-full h-10 w-10 p-2 flex items-center justify-center">
             <svg width={32} height={32} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +83,7 @@ const CarouselSlider = ({ slides }: CarouselProps): JSX.Element => {
       </div>
       <div className="Absolute-Center right-0 flex items-center"
       onMouseEnter={pauseSlide}
-      onMouseLeave={resumeSlide}>
+      onMouseLeave={() => handleClick("next")}>
         <button className="w-10 h-10" onClick={() => handleClick("next")}>
           <div className="bg-gray-600 text-white bg-opacity-50 rounded-full h-10 w-10 p-2 flex items-center justify-center">
             <svg width={32} height={32} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
