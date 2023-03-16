@@ -8,11 +8,11 @@ const CarouselSlider = ({ slides }: CarouselProps): JSX.Element => {
   const [index, setIndex] = useState<number>(0);
   const [timerId, setTimerId] = useState<NodeJS.Timeout | null>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
- 
-  let isSlidePaused = false;
+  const [slidePaused, setSlidePaused] = useState(false);
+  
 
   useEffect(() => {
-    if(!isSlidePaused){
+    if(!slidePaused){
     intervalRef.current = setInterval(() => {
       setIndex((currentIndex) => (currentIndex + 1) % slides?.length);
     }, 3000);
@@ -25,14 +25,11 @@ const CarouselSlider = ({ slides }: CarouselProps): JSX.Element => {
 
   const pauseSlide = (() => {
     if (intervalRef.current) clearInterval(intervalRef.current);
-    isSlidePaused = true;
+    setSlidePaused(true);
   });
 
   const resumeSlide = (() => {
-    isSlidePaused = false;
-    intervalRef.current = setInterval(() => {
-      setIndex((currentIndex) => (currentIndex + 1) % slides?.length);
-    }, 3000);
+    setSlidePaused(false);    
   });
 
 
