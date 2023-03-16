@@ -30,6 +30,7 @@ const CarouselSlider = ({ slides }: CarouselProps): JSX.Element => {
 
 
   const handleClick = (direction: "prev" | "next") => {
+
     if (intervalRef.current) clearInterval(intervalRef.current);
 
     setIndex((currentIndex) => {
@@ -46,6 +47,7 @@ const CarouselSlider = ({ slides }: CarouselProps): JSX.Element => {
     intervalRef.current = setInterval(() => {
       setIndex((currentIndex) => (currentIndex + 1) % slides?.length);
     }, 3000);
+    
   };
   
 
@@ -67,8 +69,7 @@ const CarouselSlider = ({ slides }: CarouselProps): JSX.Element => {
       ))}
 
       <div className="Absolute-Center left-0 flex items-center" 
-      onMouseEnter={pauseSlide}
-      onMouseLeave={() => handleClick("next")}>
+      >
         <button className="w-10 h-10" onClick={() => handleClick("prev")}>
           <div className="bg-gray-600 text-white bg-opacity-50 rounded-full h-10 w-10 p-2 flex items-center justify-center">
             <svg width={32} height={32} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -82,8 +83,7 @@ const CarouselSlider = ({ slides }: CarouselProps): JSX.Element => {
         </button>
       </div>
       <div className="Absolute-Center right-0 flex items-center"
-      onMouseEnter={pauseSlide}
-      onMouseLeave={() => handleClick("next")}>
+      >
         <button className="w-10 h-10" onClick={() => handleClick("next")}>
           <div className="bg-gray-600 text-white bg-opacity-50 rounded-full h-10 w-10 p-2 flex items-center justify-center">
             <svg width={32} height={32} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
