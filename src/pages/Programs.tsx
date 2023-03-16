@@ -61,11 +61,11 @@ export default function Programs() {
   return (
     <section id="Programs" className="min-h-screen angledBgSlateLight">
       <div className="container mx-auto">
-      <h1 className="text-3xl font-bold mb-8 text-lime-500">Programs</h1>
+      <h1 className="text-4xl font-bold mb-8 text-lime-500">Programs</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {programs.map(program => (
-          <div key={program.id} className="rounded-2xl angledBgDarkTeal">
+          <div key={program.id} className="rounded-2xl angledBgDarkTeal2">
             <div className="w-full text-cyan-100 p-6 text-4xl md:text-4xl rounded-t-2xl">
               <h1>{program.title}</h1>
             </div>

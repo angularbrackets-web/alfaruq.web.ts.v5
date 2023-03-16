@@ -34,7 +34,7 @@ const todayLocaleDate = new Date().toLocaleDateString('en-ca', { weekday:"long",
   <div className="overflow-x-auto">
     <div className="inline-block min-w-full sm:p-0 lg:px-8 px-[3%] py-0">
       <div className="mb-4">
-        <h1 className="text-3xl font-extrabold mb-2 text-lime-600">Prayer Times</h1>
+        <h1 className="text-4xl font-extrabold mb-2 text-lime-600">Prayer Times</h1>
         <h6 className="text-md font-semibold text-cyan-600 mb-2">{todayLocaleDate}</h6>
       <h6 className="text-md font-semibold text-cyan-600">{hijriDate}</h6>
       </div>

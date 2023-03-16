@@ -6,7 +6,7 @@ import { FaMoneyCheckAlt } from 'react-icons/fa';
 const Navbar = () => {
 
   const mobileMenuRef = useRef<HTMLDivElement>(null);
-
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   
 
   const mobileMenuButtonClick = () => {
@@ -97,7 +97,7 @@ const Navbar = () => {
             <button
               type="button"
               className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"              
-              onClick={mobileMenuButtonClick}
+              onClick={() => setShowMobileMenu(true)}
             >
               <span className="sr-only">Open main menu</span>
               {/* Icon when menu is closed. */}
@@ -129,7 +129,7 @@ const Navbar = () => {
       {/* Leaving: "duration-100 ease-in" */}
       {/* From: "opacity-100 scale-100" */}
       {/* To: "opacity-0 scale-95" */}
-      <div ref={mobileMenuRef} className="mobile-menu hidden" onMouseLeave={mobileMenuButtonClick} >
+      <div ref={mobileMenuRef} className={`mobile-menu ${showMobileMenu ? 'block' : 'hidden'} `} onMouseLeave={() => setShowMobileMenu(false)} >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link href="#Home" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
             

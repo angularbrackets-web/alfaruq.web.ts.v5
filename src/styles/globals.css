@@ -71,6 +71,17 @@
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+/* .carousel-slide{
+  clip-path: circle(0% at 0 50%);
+}
+
+.carousel-slide-active{
+  clip-path: circle(150% at 0 50%);
+  transition: 1s;
+  transition-property: clip-path;
+} */
+
+
 .prayerTimePage{
   top:-2%;
 }
@@ -104,11 +115,23 @@
   background-image: linear-gradient(196deg, #eaeaea 70%, #F4F4F4 calc(70% + 2px));
 }
 
+.angledBgLime{
+  background-image: linear-gradient(196deg, #a2f5f2 70%, #333 calc(70% + 2px));
+}
+
+.angledBgLime2{
+  background-image: linear-gradient(196deg, #f0f4d8 70%, #333 calc(70% + 2px));
+}
+
 .angledBgDarkTeal{
-  background-image: linear-gradient(196deg, #072b2b 70%, #333 calc(70% + 2px));
+  background-image: linear-gradient(196deg, #011d31 70%, #333 calc(70% + 2px));
 }
 
 .angledBgDarkTeal2{
+  background-image: linear-gradient(196deg, #072b2b 70%, #333 calc(70% + 2px));
+}
+
+.angledBgDarkTeal3{
   background-image: linear-gradient(196deg, #125050 70%, #333 calc(70% + 2px));
 }
 
@@ -138,8 +161,12 @@
 }
 
 .angledBgSlateLight{
-  background-image: linear-gradient(196deg, #012235 25%, #f3f7ea calc(25% + 2px));
+  background-image: linear-gradient(196deg, #012235 31%, #f3f7ea calc(31% + 2px));
 }
+
+/* .angledBgSlateLight{
+  background-image: linear-gradient(196deg, #012235 25%, #f3f7ea calc(25% + 2px));
+} */
 
 .angledBgSlateLight2{
   background-image: linear-gradient(196deg, #f3f7ea 25%, #012235 calc(25% + 2px));
@@ -319,7 +346,7 @@
   overflow: auto; /* Recommended in case content is larger than the container */
   margin: auto; /* Center the item vertically & horizontally */
   position: absolute; /* Break it out of the regular flow */
-  top: 0;  
+  top: -30%;  
   bottom: 0; 
   
 }

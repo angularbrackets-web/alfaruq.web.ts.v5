@@ -120,7 +120,7 @@ export default function CountDownTimer() {
       
 
       <span key={interval}>
-        <span className="text-2xl">{timeLeft[interval]}</span> {interval} { !isLast ? " : " : ""}
+        <span className="text-3xl">{timeLeft[interval]}</span> {interval} { !isLast ? " : " : ""}
       </span>
     );
   });
@@ -133,9 +133,9 @@ export default function CountDownTimer() {
       
 
           <div className="p-4  bg-lime-400 text-lime-900 rounded-lg mb-2">
-            <div className="nextPrayer" dangerouslySetInnerHTML={{ __html: `${currentEvent.name}` }} ></div>          
+            <div className="nextPrayer text-2xl" dangerouslySetInnerHTML={{ __html: `${currentEvent.name}` }} ></div>          
             
-            <h2 className="text-md my-1 font-extrabold">{timerComponents?.length ? timerComponents : <span>Time's up!</span>}</h2>
+            <h2 className="text-xl my-1 font-extrabold">{timerComponents?.length ? timerComponents : <span>Time's up!</span>}</h2>
           </div>
             
       );
